@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:3002/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="icon" href="http://localhost:3002/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <link rel="apple-touch-icon" href="http://localhost:3002/logo192.png">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="http://localhost:3002/manifest.json">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title style="color:aqua">DevStream</title>
+<style>  body {
+      margin: 0;
+      background-color: #f0f8ede5;
+      font-family: 'Otomanopee One', sans-serif;
+  }
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zcmMvaW5kZXguY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJFQUFFO01BQ0ksU0FBUztNQUNULDJCQUEyQjtNQUMzQix5Q0FBeUM7RUFDN0MiLCJzb3VyY2VzQ29udGVudCI6WyIgIGJvZHkge1xyXG4gICAgICBtYXJnaW46IDA7XHJcbiAgICAgIGJhY2tncm91bmQtY29sb3I6ICNmMGY4ZWRlNTtcclxuICAgICAgZm9udC1mYW1pbHk6ICdPdG9tYW5vcGVlIE9uZScsIHNhbnMtc2VyaWY7XHJcbiAgfSJdLCJzb3VyY2VSb290IjoiIn0= */</style><style>.nopad {
+    padding: 0;
+}
+
+
+/* Get user btn */
+
+.button {
+    border: none;
+    color: #ffffff;
+    padding: 12px 23px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: #370658;
+    color: #ffffff;
+    border: 2px solid #3d2032;
+    float: right;
+    border-radius: 15px;
+    text-transform: uppercase;
+}
+
+
+/* User card btn */
+
+.card {
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    background-color: #06581f;
+    color: white;
+    padding: 20px 20px;
+    border-radius: 10px;
+    border: 3px solid #064c58;
+}
+
+.card:hover {
+    background-color: white;
+    color: #063058;
+    cursor: pointer;
+    border: 3px solid #064e58;
+    box-shadow: 0 4px 8px 0 #062c58;
+}
+
+.row img {
+    border-radius: 50%;
+}
+
+.container {
+    padding: 20px 40px;
+    font-size: 17px;
+}
+
+
+/* Responsive css */
+
+@media only screen and (max-width: 600px) {
+    .Navbar .brand {
+        font-size: 20px;
+    }
+    .container {
+        padding: 2px 16px;
+        font-size: 18px;
+    }
+    .email {
+        font-size: 12px;
+    }
+}
+
+
+/* Grid System */
+
+* {
+    box-sizing: border-box;
+    word-break: break-all
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 10px;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {
+        width: 8.33%;
+    }
+    .col-s-2 {
+        width: 16.66%;
+    }
+    .col-s-3 {
+        width: 25%;
+    }
+    .col-s-4 {
+        width: 33.33%;
+    }
+    .col-s-5 {
+        width: 41.66%;
+    }
+    .col-s-6 {
+        width: 50%;
+    }
+    .col-s-7 {
+        width: 58.33%;
+    }
+    .col-s-8 {
+        width: 66.66%;
+    }
+    .col-s-9 {
+        width: 75%;
+    }
+    .col-s-10 {
+        width: 83.33%;
+    }
+    .col-s-11 {
+        width: 91.66%;
+    }
+    .col-s-12 {
+        width: 100%;
+    }
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zcmMvQXBwLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLFVBQVU7QUFDZDs7O0FBR0EsaUJBQWlCOztBQUVqQjtJQUNJLFlBQVk7SUFDWixjQUFjO0lBQ2Qsa0JBQWtCO0lBQ2xCLGtCQUFrQjtJQUNsQixxQkFBcUI7SUFDckIsY0FBYztJQUNkLGVBQWU7SUFDZixlQUFlO0lBQ2YsZUFBZTtBQUNuQjs7QUFFQTtJQUNJLHlCQUF5QjtJQUN6QixjQUFjO0lBQ2QseUJBQXlCO0lBQ3pCLFlBQVk7SUFDWixtQkFBbUI7SUFDbkIseUJBQXlCO0FBQzdCOzs7QUFHQSxrQkFBa0I7O0FBRWxCO0lBQ0ksZ0NBQWdDO0lBQ2hDLFdBQVc7SUFDWCx5QkFBeUI7SUFDekIsWUFBWTtJQUNaLGtCQUFrQjtJQUNsQixtQkFBbUI7SUFDbkIseUJBQXlCO0FBQzdCOztBQUVBO0lBQ0ksdUJBQXVCO0lBQ3ZCLGNBQWM7SUFDZCxlQUFlO0lBQ2YseUJBQXlCO0lBQ3pCLCtCQUErQjtBQUNuQzs7QUFFQTtJQUNJLGtCQUFrQjtBQUN0Qjs7QUFFQTtJQUNJLGtCQUFrQjtJQUNsQixlQUFlO0FBQ25COzs7QUFHQSxtQkFBbUI7O0FBRW5CO0lBQ0k7UUFDSSxlQUFlO0lBQ25CO0lBQ0E7UUFDSSxpQkFBaUI7UUFDakIsZUFBZTtJQUNuQjtJQUNBO1FBQ0ksZUFBZTtJQUNuQjtBQUNKOzs7QUFHQSxnQkFBZ0I7O0FBRWhCO0lBQ0ksc0JBQXNCO0lBQ3RCO0FBQ0o7O0FBRUE7SUFDSSxXQUFXO0lBQ1gsV0FBVztJQUNYLGNBQWM7QUFDbEI7O0FBRUE7SUFDSSxXQUFXO0lBQ1gsYUFBYTtBQUNqQjs7QUFFQTtJQUNJLFlBQVk7QUFDaEI7O0FBRUE7SUFDSSxhQUFhO0FBQ2pCOztBQUVBO0lBQ0ksVUFBVTtBQUNkOztBQUVBO0lBQ0ksYUFBYTtBQUNqQjs7QUFFQTtJQUNJLGFBQWE7QUFDakI7O0FBRUE7SUFDSSxVQUFVO0FBQ2Q7O0FBRUE7SUFDSSxhQUFhO0FBQ2pCOztBQUVBO0lBQ0ksYUFBYTtBQUNqQjs7QUFFQTtJQUNJLFVBQVU7QUFDZDs7QUFFQTtJQUNJLGFBQWE7QUFDakI7O0FBRUE7SUFDSSxhQUFhO0FBQ2pCOztBQUVBO0lBQ0ksV0FBVztBQUNmOztBQUVBO0lBQ0ksaUJBQWlCO0lBQ2pCO1FBQ0ksWUFBWTtJQUNoQjtJQUNBO1FBQ0ksYUFBYTtJQUNqQjtJQUNBO1FBQ0ksVUFBVTtJQUNkO0lBQ0E7UUFDSSxhQUFhO0lBQ2pCO0lBQ0E7UUFDSSxhQUFhO0lBQ2pCO0lBQ0E7UUFDSSxVQUFVO0lBQ2Q7SUFDQTtRQUNJLGFBQWE7SUFDakI7SUFDQTtRQUNJLGFBQWE7SUFDakI7SUFDQTtRQUNJLFVBQVU7SUFDZDtJQUNBO1FBQ0ksYUFBYTtJQUNqQjtJQUNBO1FBQ0ksYUFBYTtJQUNqQjtJQUNBO1FBQ0ksV0FBVztJQUNmO0FBQ0oiLCJzb3VyY2VzQ29udGVudCI6WyIubm9wYWQge1xyXG4gICAgcGFkZGluZzogMDtcclxufVxyXG5cclxuXHJcbi8qIEdldCB1c2VyIGJ0biAqL1xyXG5cclxuLmJ1dHRvbiB7XHJcbiAgICBib3JkZXI6IG5vbmU7XHJcbiAgICBjb2xvcjogI2ZmZmZmZjtcclxuICAgIHBhZGRpbmc6IDEycHggMjNweDtcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcclxuICAgIGRpc3BsYXk6IGJsb2NrO1xyXG4gICAgZm9udC1zaXplOiAyMHB4O1xyXG4gICAgbWFyZ2luOiA0cHggMnB4O1xyXG4gICAgY3Vyc29yOiBwb2ludGVyO1xyXG59XHJcblxyXG4uYnV0dG9uMSB7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMzcwNjU4O1xyXG4gICAgY29sb3I6ICNmZmZmZmY7XHJcbiAgICBib3JkZXI6IDJweCBzb2xpZCAjM2QyMDMyO1xyXG4gICAgZmxvYXQ6IHJpZ2h0O1xyXG4gICAgYm9yZGVyLXJhZGl1czogMTVweDtcclxuICAgIHRleHQtdHJhbnNmb3JtOiB1cHBlcmNhc2U7XHJcbn1cclxuXHJcblxyXG4vKiBVc2VyIGNhcmQgYnRuICovXHJcblxyXG4uY2FyZCB7XHJcbiAgICB0cmFuc2l0aW9uOiBhbGwgMC4zcyBlYXNlLWluLW91dDtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzA2NTgxZjtcclxuICAgIGNvbG9yOiB3aGl0ZTtcclxuICAgIHBhZGRpbmc6IDIwcHggMjBweDtcclxuICAgIGJvcmRlci1yYWRpdXM6IDEwcHg7XHJcbiAgICBib3JkZXI6IDNweCBzb2xpZCAjMDY0YzU4O1xyXG59XHJcblxyXG4uY2FyZDpob3ZlciB7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcclxuICAgIGNvbG9yOiAjMDYzMDU4O1xyXG4gICAgY3Vyc29yOiBwb2ludGVyO1xyXG4gICAgYm9yZGVyOiAzcHggc29saWQgIzA2NGU1ODtcclxuICAgIGJveC1zaGFkb3c6IDAgNHB4IDhweCAwICMwNjJjNTg7XHJcbn1cclxuXHJcbi5yb3cgaW1nIHtcclxuICAgIGJvcmRlci1yYWRpdXM6IDUwJTtcclxufVxyXG5cclxuLmNvbnRhaW5lciB7XHJcbiAgICBwYWRkaW5nOiAyMHB4IDQwcHg7XHJcbiAgICBmb250LXNpemU6IDE3cHg7XHJcbn1cclxuXHJcblxyXG4vKiBSZXNwb25zaXZlIGNzcyAqL1xyXG5cclxuQG1lZGlhIG9ubHkgc2NyZWVuIGFuZCAobWF4LXdpZHRoOiA2MDBweCkge1xyXG4gICAgLk5hdmJhciAuYnJhbmQge1xyXG4gICAgICAgIGZvbnQtc2l6ZTogMjBweDtcclxuICAgIH1cclxuICAgIC5jb250YWluZXIge1xyXG4gICAgICAgIHBhZGRpbmc6IDJweCAxNnB4O1xyXG4gICAgICAgIGZvbnQtc2l6ZTogMThweDtcclxuICAgIH1cclxuICAgIC5lbWFpbCB7XHJcbiAgICAgICAgZm9udC1zaXplOiAxMnB4O1xyXG4gICAgfVxyXG59XHJcblxyXG5cclxuLyogR3JpZCBTeXN0ZW0gKi9cclxuXHJcbioge1xyXG4gICAgYm94LXNpemluZzogYm9yZGVyLWJveDtcclxuICAgIHdvcmQtYnJlYWs6IGJyZWFrLWFsbFxyXG59XHJcblxyXG4ucm93OjphZnRlciB7XHJcbiAgICBjb250ZW50OiBcIlwiO1xyXG4gICAgY2xlYXI6IGJvdGg7XHJcbiAgICBkaXNwbGF5OiB0YWJsZTtcclxufVxyXG5cclxuW2NsYXNzKj1cImNvbC1cIl0ge1xyXG4gICAgZmxvYXQ6IGxlZnQ7XHJcbiAgICBwYWRkaW5nOiAxMHB4O1xyXG59XHJcblxyXG4uY29sLTEge1xyXG4gICAgd2lkdGg6IDguMzMlO1xyXG59XHJcblxyXG4uY29sLTIge1xyXG4gICAgd2lkdGg6IDE2LjY2JTtcclxufVxyXG5cclxuLmNvbC0zIHtcclxuICAgIHdpZHRoOiAyNSU7XHJcbn1cclxuXHJcbi5jb2wtNCB7XHJcbiAgICB3aWR0aDogMzMuMzMlO1xyXG59XHJcblxyXG4uY29sLTUge1xyXG4gICAgd2lkdGg6IDQxLjY2JTtcclxufVxyXG5cclxuLmNvbC02IHtcclxuICAgIHdpZHRoOiA1MCU7XHJcbn1cclxuXHJcbi5jb2wtNyB7XHJcbiAgICB3aWR0aDogNTguMzMlO1xyXG59XHJcblxyXG4uY29sLTgge1xyXG4gICAgd2lkdGg6IDY2LjY2JTtcclxufVxyXG5cclxuLmNvbC05IHtcclxuICAgIHdpZHRoOiA3NSU7XHJcbn1cclxuXHJcbi5jb2wtMTAge1xyXG4gICAgd2lkdGg6IDgzLjMzJTtcclxufVxyXG5cclxuLmNvbC0xMSB7XHJcbiAgICB3aWR0aDogOTEuNjYlO1xyXG59XHJcblxyXG4uY29sLTEyIHtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG59XHJcblxyXG5AbWVkaWEgb25seSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDYwMHB4KSB7XHJcbiAgICAvKiBGb3IgdGFibGV0czogKi9cclxuICAgIC5jb2wtcy0xIHtcclxuICAgICAgICB3aWR0aDogOC4zMyU7XHJcbiAgICB9XHJcbiAgICAuY29sLXMtMiB7XHJcbiAgICAgICAgd2lkdGg6IDE2LjY2JTtcclxuICAgIH1cclxuICAgIC5jb2wtcy0zIHtcclxuICAgICAgICB3aWR0aDogMjUlO1xyXG4gICAgfVxyXG4gICAgLmNvbC1zLTQge1xyXG4gICAgICAgIHdpZHRoOiAzMy4zMyU7XHJcbiAgICB9XHJcbiAgICAuY29sLXMtNSB7XHJcbiAgICAgICAgd2lkdGg6IDQxLjY2JTtcclxuICAgIH1cclxuICAgIC5jb2wtcy02IHtcclxuICAgICAgICB3aWR0aDogNTAlO1xyXG4gICAgfVxyXG4gICAgLmNvbC1zLTcge1xyXG4gICAgICAgIHdpZHRoOiA1OC4zMyU7XHJcbiAgICB9XHJcbiAgICAuY29sLXMtOCB7XHJcbiAgICAgICAgd2lkdGg6IDY2LjY2JTtcclxuICAgIH1cclxuICAgIC5jb2wtcy05IHtcclxuICAgICAgICB3aWR0aDogNzUlO1xyXG4gICAgfVxyXG4gICAgLmNvbC1zLTEwIHtcclxuICAgICAgICB3aWR0aDogODMuMzMlO1xyXG4gICAgfVxyXG4gICAgLmNvbC1zLTExIHtcclxuICAgICAgICB3aWR0aDogOTEuNjYlO1xyXG4gICAgfVxyXG4gICAgLmNvbC1zLTEyIHtcclxuICAgICAgICB3aWR0aDogMTAwJTtcclxuICAgIH1cclxufSJdLCJzb3VyY2VSb290IjoiIn0= */</style><style>/* Navbar */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 12px 12px 0 0;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+li {
+    float: left;
+}
+
+.Navbar {
+    background-color: #e0d2e9;
+    margin-bottom: 40px;
+}
+
+.Navbar .brand {
+    font-size: 40px;
+    font-weight: 800;
+    color: #065851;
+}
+
+li a {
+    display: block;
+    color: #5a8a8a41;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zcmMvY29tcG9uZW50cy9OYXZiYXIuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLFdBQVc7O0FBRVg7SUFDSSxxQkFBcUI7SUFDckIsU0FBUztJQUNULHNCQUFzQjtJQUN0QixnQkFBZ0I7SUFDaEIsMENBQTBDO0FBQzlDOztBQUVBO0lBQ0ksV0FBVztBQUNmOztBQUVBO0lBQ0kseUJBQXlCO0lBQ3pCLG1CQUFtQjtBQUN2Qjs7QUFFQTtJQUNJLGVBQWU7SUFDZixnQkFBZ0I7SUFDaEIsY0FBYztBQUNsQjs7QUFFQTtJQUNJLGNBQWM7SUFDZCxnQkFBZ0I7SUFDaEIsa0JBQWtCO0lBQ2xCLGtCQUFrQjtJQUNsQixxQkFBcUI7QUFDekIiLCJzb3VyY2VzQ29udGVudCI6WyIvKiBOYXZiYXIgKi9cclxuXHJcbnVsIHtcclxuICAgIGxpc3Qtc3R5bGUtdHlwZTogbm9uZTtcclxuICAgIG1hcmdpbjogMDtcclxuICAgIHBhZGRpbmc6IDEycHggMTJweCAwIDA7XHJcbiAgICBvdmVyZmxvdzogaGlkZGVuO1xyXG4gICAgYm94LXNoYWRvdzogMCA0cHggOHB4IDAgcmdiYSgwLCAwLCAwLCAwLjIpO1xyXG59XHJcblxyXG5saSB7XHJcbiAgICBmbG9hdDogbGVmdDtcclxufVxyXG5cclxuLk5hdmJhciB7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjZTBkMmU5O1xyXG4gICAgbWFyZ2luLWJvdHRvbTogNDBweDtcclxufVxyXG5cclxuLk5hdmJhciAuYnJhbmQge1xyXG4gICAgZm9udC1zaXplOiA0MHB4O1xyXG4gICAgZm9udC13ZWlnaHQ6IDgwMDtcclxuICAgIGNvbG9yOiAjMDY1ODUxO1xyXG59XHJcblxyXG5saSBhIHtcclxuICAgIGRpc3BsYXk6IGJsb2NrO1xyXG4gICAgY29sb3I6ICM1YThhOGE0MTtcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgIHBhZGRpbmc6IDE1cHggMjBweDtcclxuICAgIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcclxufSJdLCJzb3VyY2VSb290IjoiIn0= */</style><style>.loader {
+    border: 20px solid #282682;
+    border-top: 20px solid #c9bae4a1;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 2s linear infinite;
+    transform: translate(-10%, -10%);
+    position: relative;
+    left: 50%;
+    top: 40%;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zcmMvY29tcG9uZW50cy9Mb2FkZXIuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksMEJBQTBCO0lBQzFCLGdDQUFnQztJQUNoQyxrQkFBa0I7SUFDbEIsWUFBWTtJQUNaLGFBQWE7SUFDYixrQ0FBa0M7SUFDbEMsZ0NBQWdDO0lBQ2hDLGtCQUFrQjtJQUNsQixTQUFTO0lBQ1QsUUFBUTtBQUNaIiwic291cmNlc0NvbnRlbnQiOlsiLmxvYWRlciB7XHJcbiAgICBib3JkZXI6IDIwcHggc29saWQgIzI4MjY4MjtcclxuICAgIGJvcmRlci10b3A6IDIwcHggc29saWQgI2M5YmFlNGExO1xyXG4gICAgYm9yZGVyLXJhZGl1czogNTAlO1xyXG4gICAgd2lkdGg6IDEwMHB4O1xyXG4gICAgaGVpZ2h0OiAxMDBweDtcclxuICAgIGFuaW1hdGlvbjogc3BpbiAycyBsaW5lYXIgaW5maW5pdGU7XHJcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtMTAlLCAtMTAlKTtcclxuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICAgIGxlZnQ6IDUwJTtcclxuICAgIHRvcDogNDAlO1xyXG59Il0sInNvdXJjZVJvb3QiOiIifQ== */</style></head>
+
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"><div class="App"><div class="Navbar"><ul><li><a class="brand">DevStream</a></li><button class="button button1">Get Users</button></ul></div> <div class="row">  <div class="container-card col-4 col-s-6"><div class="card"><div class="row"><div class="col-3 col-s-12"><img src="./DevStream_files/1-image.jpg" alt="Avatar" style="height: 100%;"></div><div class="col-9 col-s-12"><div class="container"><span><b>George Bluth</b></span><p class="email">george.bluth@reqres.in</p></div></div></div></div></div><div class="container-card col-4 col-s-6"><div class="card"><div class="row"><div class="col-3 col-s-12"><img src="./DevStream_files/2-image.jpg" alt="Avatar" style="height: 100%;"></div><div class="col-9 col-s-12"><div class="container"><span><b>Janet Weaver</b></span><p class="email">janet.weaver@reqres.in</p></div></div></div></div></div><div class="container-card col-4 col-s-6"><div class="card"><div class="row"><div class="col-3 col-s-12"><img src="./DevStream_files/3-image.jpg" alt="Avatar" style="height: 100%;"></div><div class="col-9 col-s-12"><div class="container"><span><b>Emma Wong</b></span><p class="email">emma.wong@reqres.in</p></div></div></div></div></div><div class="container-card col-4 col-s-6"><div class="card"><div class="row"><div class="col-3 col-s-12"><img src="./DevStream_files/4-image.jpg" alt="Avatar" style="height: 100%;"></div><div class="col-9 col-s-12"><div class="container"><span><b>Eve Holt</b></span><p class="email">eve.holt@reqres.in</p></div></div></div></div></div><div class="container-card col-4 col-s-6"><div class="card"><div class="row"><div class="col-3 col-s-12"><img src="./DevStream_files/5-image.jpg" alt="Avatar" style="height: 100%;"></div><div class="col-9 col-s-12"><div class="container"><span><b>Charles Morris</b></span><p class="email">charles.morris@reqres.in</p></div></div></div></div></div><div class="container-card col-4 col-s-6"><div class="card"><div class="row"><div class="col-3 col-s-12"><img src="./DevStream_files/6-image.jpg" alt="Avatar" style="height: 100%;"></div><div class="col-9 col-s-12"><div class="container"><span><b>Tracey Ramos</b></span><p class="email">tracey.ramos@reqres.in</p></div></div></div></div></div> </div>  </div></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    <footer>
+        © Copyright DevStream @2021</footer>
+<script src="./DevStream_files/bundle.js.download"></script><script src="./DevStream_files/vendors_main.chunk.js.download"></script><script src="./DevStream_files/main.chunk.js.download"></script>
+
+</body></html>
